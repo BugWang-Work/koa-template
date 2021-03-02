@@ -1,0 +1,43 @@
+{
+  "name": "blog-vue-api",
+  "version": "1.0.0",
+  "description": "koa实现的blog接口项目",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/index.js",
+    "debug": "node --inspect-brk ./node_modules/.bin/webpack --inline --progress",
+    "build": "cross-env NODE_ENV=prod webpack --config config/webpack.config.prod.js"
+  },
+  "keywords": [
+    "koa",
+    "api"
+  ],
+  "author": "wangrui@bugwang.work",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "ip": "^1.1.5",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-combine-routers": "^4.0.2",
+    "koa-compose": "^4.1.0",
+    "koa-compress": "^5.0.1",
+    "koa-helmet": "^6.0.0",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/node": "^7.13.0",
+    "@babel/preset-env": "^7.13.9",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.7",
+    "terser-webpack-plugin": "^5.1.1",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-merge": "^5.7.3",
+    "webpack-node-externals": "^2.5.2"
+  }
+}
